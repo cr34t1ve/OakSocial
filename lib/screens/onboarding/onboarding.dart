@@ -37,6 +37,7 @@ class _OnboardingState extends State<Onboarding> {
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: List.generate(
                       pageData.length,
                       (index) => buildDot(index),
@@ -55,10 +56,10 @@ class _OnboardingState extends State<Onboarding> {
     return AnimatedContainer(
       duration: Duration(milliseconds: 200),
       margin: EdgeInsets.only(right: 5),
-      height: 4,
-      width: 23,
+      height: 8,
+      width: 8,
       decoration: BoxDecoration(
-          color: currentPage == index ? Colors.black : Color(0xFFE3E9F0),
+          color: currentPage == index ? Color(0xFF4EAD8B) : Color(0xFFC4C4C4) ,
           borderRadius: BorderRadius.circular(3)),
     );
   }
