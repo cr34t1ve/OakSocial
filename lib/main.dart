@@ -4,5 +4,6 @@ import 'package:oak_social/screens/onboarding/onboarding.dart';
 void main() {
   runApp(MaterialApp(
     home: Onboarding(),
+    debugShowCheckedModeBanner: false,
   ));
 }

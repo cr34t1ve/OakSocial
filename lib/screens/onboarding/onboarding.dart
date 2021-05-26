@@ -12,6 +12,22 @@ class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        actions: [
+          Padding(
+            padding: EdgeInsets.only(right: 30.0),
+            child: Text(
+              'Skip',
+              style: TextStyle(
+                color: Colors.black
+              ),
+            ),
+          )
+        ],
+      ),
+      backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
           Expanded(
