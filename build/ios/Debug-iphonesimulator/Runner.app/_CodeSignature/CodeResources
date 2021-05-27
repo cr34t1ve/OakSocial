@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		ZvZNR03WZplcAAY4JqzwDUgg4go=
+		dKNrOTJbje28n4lUaLJUi5HO+YM=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,19 +118,43 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		1rQ9rfMPsc5IiCmd9LHirTyR+vw=
+		ntf3BiE1bnjTZodhx7UQuEphvEQ=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
-		QMaXSFFxBcMhWx5eqRXdnFWhiKc=
+		sal0cbeF3jnYE7QGfbOJL2yxKSw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<data>
-		vKJkVIcw+LGHFnKJGwrQwCREv68=
+		Q2NCePOScLeFCr+yzIDP+MwRDbU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES</key>
 		<data>
 		2cyH1C7mquIICW4Bp6SPq3meug4=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Bold.ttf</key>
+		<data>
+		GSXAQauK/zeu9+MdHhF0phPAzic=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-ExtraBold.ttf</key>
+		<data>
+		4Ihwrtr47vWOb+BvzI2sN0D2Mzo=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Light.ttf</key>
+		<data>
+		pBcNaG2sVm22dFErmmvTkpFyvLE=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Medium.ttf</key>
+		<data>
+		DeRbAp+euDIiXz9I7SGXLbFjXps=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Regular.ttf</key>
+		<data>
+		fD/t2G1hscV17e1pC5Isd/nAmko=
+		</data>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-SemiBold.ttf</key>
+		<data>
+		olcOWoQNI9UuUPmwSBDDyyymUmM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/Group%201.svg</key>
 		<data>
@@ -158,7 +182,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		RtYnx7B1VWeBMqFeenMT6L0ymgQ=
+		kqwF9e/fAEPGgqs2+wrmXBalKfM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -170,7 +194,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		N6gVDMQ+vy8oxdRhZWUrcQjp0ic=
+		UMrXTUS09mXWzr+X2Ml/yT1m/vU=
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
@@ -541,11 +565,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ZvZNR03WZplcAAY4JqzwDUgg4go=
+			dKNrOTJbje28n4lUaLJUi5HO+YM=
 			</data>
 			<key>hash2</key>
 			<data>
-			oNvJ1oZbM3P3F6clBRd0OB3oXNCHy/66mi1YvDvu97U=
+			4ONnMYPFEnfhpRk7IGhy5E6UJpDLDlKD3UjDvVcTyT0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -563,33 +587,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			1rQ9rfMPsc5IiCmd9LHirTyR+vw=
+			ntf3BiE1bnjTZodhx7UQuEphvEQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			vaFoXzW1geSQH15m6CUAFqDIgMVqLiRMp+Z7lyCtzxU=
+			WlvZlAjv1RjgAEyGEH67xKsbNEdgawFx6Kzh+jscjDg=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			QMaXSFFxBcMhWx5eqRXdnFWhiKc=
+			sal0cbeF3jnYE7QGfbOJL2yxKSw=
 			</data>
 			<key>hash2</key>
 			<data>
-			CETFCCJPrOC670UaixSbUyXLy7G6qtDp+7RFuCyQpnU=
+			CagO19KGnIPKgL1nUBXzvoiDqqxzl6bqbDOWxtydZ/0=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/FontManifest.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			vKJkVIcw+LGHFnKJGwrQwCREv68=
+			Q2NCePOScLeFCr+yzIDP+MwRDbU=
 			</data>
 			<key>hash2</key>
 			<data>
-			zX4DZFvESy3Ue3y2JvUcTsv1Whl6t3JBYotHrBZfviE=
+			ylNmE25TzLv5pcBGMiQ8BUvlrggUIGnEn0jvVqR7DRI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/NOTICES</key>
@@ -601,6 +625,72 @@
 			<key>hash2</key>
 			<data>
 			IbF8mqZxzVEJ5UVh+F3LfmVzxoZ7Q79WAs+SOm20YH4=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Bold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GSXAQauK/zeu9+MdHhF0phPAzic=
+			</data>
+			<key>hash2</key>
+			<data>
+			vwN1ujUZlgW7G37LatW9AZV72ShZ7iZHuwmjdrrB0N8=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-ExtraBold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4Ihwrtr47vWOb+BvzI2sN0D2Mzo=
+			</data>
+			<key>hash2</key>
+			<data>
+			5u4XJQxBfbtTqRhyOLgDG8C87kCb4qLEFi0CP+6UA+Q=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Light.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pBcNaG2sVm22dFErmmvTkpFyvLE=
+			</data>
+			<key>hash2</key>
+			<data>
+			RtpTJzcmrTuixqUc/AcAeS7n4XzOlomjWtnYTBrrA0E=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Medium.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DeRbAp+euDIiXz9I7SGXLbFjXps=
+			</data>
+			<key>hash2</key>
+			<data>
+			8tqNvUbk5kya5WkxSewgH6CThT38KSfdU8W3ISTJlkg=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-Regular.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fD/t2G1hscV17e1pC5Isd/nAmko=
+			</data>
+			<key>hash2</key>
+			<data>
+			KeH5Ol3FNwt1+YqvF056AqA2+mhHgAG1/udFS33Vpmk=
+			</data>
+		</dict>
+		<key>Frameworks/App.framework/flutter_assets/assets/fonts/Manrope/static/Manrope-SemiBold.ttf</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			olcOWoQNI9UuUPmwSBDDyyymUmM=
+			</data>
+			<key>hash2</key>
+			<data>
+			4pHfC/wrsux2LMJa2BxT5Y8ehBU7B7i/wC6yd4Uxh0s=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/assets/images/Group%201.svg</key>
@@ -673,11 +763,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RtYnx7B1VWeBMqFeenMT6L0ymgQ=
+			kqwF9e/fAEPGgqs2+wrmXBalKfM=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNChC7RkLElc1/I9zTjL1d6wcyvw3stiI4uhz3J5ayg=
+			M7H/lIHl+C0vn36tcrYomB3pFjzkXikPlGSvGA1CBtA=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -706,11 +796,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			N6gVDMQ+vy8oxdRhZWUrcQjp0ic=
+			UMrXTUS09mXWzr+X2Ml/yT1m/vU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hB2YKMY+J59WQxrMJOXvw755imkFYLYbH3U9bQ2ZOho=
+			z9ASXYuHilo7T0ZB572fj7TYXu8WxTG3/rEA98WA0tY=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Info.plist</key>

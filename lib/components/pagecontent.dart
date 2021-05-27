@@ -19,33 +19,37 @@ class PageContent extends StatelessWidget {
           image,
           fit: BoxFit.fitWidth,
         ),
-        Spacer(),
-        Padding(
-          padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
-          child: Row(
-            children: <Widget>[
-              Text(
-                text,
-                style: TextStyle(
-                    fontFamily: 'Manrope',
-                    fontWeight: FontWeight.w800,
-                    fontSize: 30,
-                    color: Colors.black),
-              ),
-              SizedBox(width: 10),
-            ],
-          ),
+        SizedBox(
+          height: 62.0,
         ),
-        Padding(
-          padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
-          child: Text(
-            text1,
-            style: TextStyle(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            Text(
+              text,
+              style: TextStyle(
+                  fontFamily: 'Manrope',
+                  fontWeight: FontWeight.w700,
+                  fontSize: 24,
+                  color: Color(0xFF4EAD8D)),
+            ),
+            SizedBox(width: 10),
+          ],
+        ),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              text1,
+              textAlign: TextAlign.center,
+              style: TextStyle(
                 fontFamily: 'Manrope',
-                fontWeight: FontWeight.w500,
-                fontSize: 18,
-                color: Colors.black),
-          ),
+                fontWeight: FontWeight.w400,
+                fontSize: 16,
+                color: Color(0xFF333333),
+              ),
+            ),
+          ],
         ),
         Spacer(),
       ],

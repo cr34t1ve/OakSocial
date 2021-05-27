@@ -21,7 +21,10 @@ class _OnboardingState extends State<Onboarding> {
             child: Text(
               'Skip',
               style: TextStyle(
-                color: Colors.black
+                color: Colors.black,
+                fontFamily: 'Manrope',
+                fontSize: 16.0,
+                fontWeight: FontWeight.w400
               ),
             ),
           )
@@ -30,6 +33,9 @@ class _OnboardingState extends State<Onboarding> {
       backgroundColor: Colors.white,
       body: Column(
         children: <Widget>[
+          SizedBox(
+            height: 67.0,
+          ),
           Expanded(
             flex: 9,
             child: PageView.builder(
@@ -49,6 +55,7 @@ class _OnboardingState extends State<Onboarding> {
           Expanded(
             flex: 4,
             child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 5, 20, 5),
@@ -59,10 +66,13 @@ class _OnboardingState extends State<Onboarding> {
                       (index) => buildDot(index),
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: 30.0,
                 )
               ],
             ),
-          )
+          ),
         ],
       ),
     );
