@@ -30,7 +30,7 @@ class Welcome extends StatelessWidget {
             ],
           ),
           SizedBox(
-            height: 101.0,
+            height: 91.0,
           ),
           DefaultButton(
             text: 'Sign Up with Email',
