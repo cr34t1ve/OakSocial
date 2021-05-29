@@ -7,8 +7,8 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> {
-  TextEditingController emailController = TextEditingController();
-  TextEditingController passwordController = TextEditingController();
+  TextEditingController _emailController = TextEditingController();
+  TextEditingController _passwordController = TextEditingController();
 
   bool _isHidden = true;
 
@@ -73,7 +73,7 @@ class _SignInState extends State<SignIn> {
               width: 334.0,
               height: 60.0,
               child: TextField(
-                controller: emailController,
+                controller: _emailController,
                 autofocus: false,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -90,7 +90,7 @@ class _SignInState extends State<SignIn> {
               width: 334.0,
               height: 60.0,
               child: TextFormField(
-                controller: passwordController,
+                controller: _passwordController,
                 // onSaved: (val) => passwordController.text = val,
                 autofocus: false,
                 keyboardType: TextInputType.visiblePassword,
@@ -126,6 +126,7 @@ class _SignInState extends State<SignIn> {
                 Text(
                   'Need an Account? Join Oak Social',
                   style: TextStyle(
+                    decoration: TextDecoration.underline,
                       color: Color(0xFF4299E1),
                       fontFamily: 'Manrope',
                       fontSize: 14.0,
@@ -142,6 +143,7 @@ class _SignInState extends State<SignIn> {
                 Text(
                   'Forgot Password',
                   style: TextStyle(
+                    decoration: TextDecoration.underline,
                       color: Color(0xFF4299E1),
                       fontFamily: 'Manrope',
                       fontSize: 14.0,
