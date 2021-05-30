@@ -17,95 +17,92 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      length: 2,
-      child: Scaffold(
-        backgroundColor: Colors.white,
-        appBar: AppBar(
-          bottom: TabBar(
-            controller: _tabController,
-            isScrollable: true,
-            // indicator: BoxDecoration(color: Colors.black),
-            indicatorColor: Color(0xFF4EAD8B),
-            // indicatorSize: ,
-            // indicatorPadding: EdgeInsets.symmetric(horizontal: 40.0),
-            labelColor: Color(0xFF4EAD8B),
-            labelStyle: TextStyle(
-                fontSize: 14,
-                color: Colors.red,
-                fontFamily: 'Manrope',
-                fontWeight: FontWeight.w600),
-            unselectedLabelColor: Color(0xFFA5AEBC),
-            unselectedLabelStyle: TextStyle(
-                fontSize: 16,
-                color: Colors.red,
-                fontFamily: 'Manrope',
-                fontWeight: FontWeight.w400),
-            tabs: [
-              Tab(
-                  child: Center(
-                child: Text(
-                  'Family Forum',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14),
-                ),
-              )),
-              Tab(
-                  child: Center(
-                child: Text(
-                  'Direct Message',
-                  style: TextStyle(
-                      fontFamily: 'Manrope',
-                      fontWeight: FontWeight.w600,
-                      fontSize: 14),
-                ),
-              )),
-            ],
-          ),
-          backgroundColor: Colors.white,
-          elevation: 0.0,
-          title: Image.asset(
-            'assets/images/OakSocialLogo.png',
-            height: 33,
-          ),
-        ),
-        body: Column(
-          children: [
-            Container(
-              height: 250.0,
-              width: 335.0,
-              child: TabBarView(
-                controller: _tabController,
-                children: [
-                  Tab(
-                    child: ListView.builder(
-                      itemCount: chatList0.length,
-                      itemBuilder: (context, index){
-                        return ChatTile(
-                          image: chatList0[index]['image'],
-                          name: chatList0[index]['name'],
-                        );
-                      },
-                    )
-                  ),
-                  Tab(
-                    child: ListView.builder(
-                      itemCount: chatList0.length,
-                      itemBuilder: (context, index){
-                        return ChatTile(
-                          image: chatList1[index]['image'],
-                          name: chatList1[index]['name'],
-                        );
-                      },
-                    )
-                  )
-                ],
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        bottom: TabBar(
+          controller: _tabController,
+          isScrollable: true,
+          // indicator: BoxDecoration(color: Colors.black),
+          indicatorColor: Color(0xFF4EAD8B),
+          // indicatorSize: ,
+          // indicatorPadding: EdgeInsets.symmetric(horizontal: 40.0),
+          labelColor: Color(0xFF4EAD8B),
+          labelStyle: TextStyle(
+              fontSize: 14,
+              color: Colors.red,
+              fontFamily: 'Manrope',
+              fontWeight: FontWeight.w600),
+          unselectedLabelColor: Color(0xFFA5AEBC),
+          unselectedLabelStyle: TextStyle(
+              fontSize: 16,
+              color: Colors.red,
+              fontFamily: 'Manrope',
+              fontWeight: FontWeight.w400),
+          tabs: [
+            Tab(
+                child: Center(
+              child: Text(
+                'Family Forum',
+                style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14),
               ),
-            ),
+            )),
+            Tab(
+                child: Center(
+              child: Text(
+                'Direct Message',
+                style: TextStyle(
+                    fontFamily: 'Manrope',
+                    fontWeight: FontWeight.w600,
+                    fontSize: 14),
+              ),
+            )),
           ],
         ),
+        backgroundColor: Colors.white,
+        elevation: 0.0,
+        title: Image.asset(
+          'assets/images/OakSocialLogo.png',
+          height: 33,
+        ),
+      ),
+      body: Column(
+        children: [
+          Container(
+            height: 250.0,
+            width: 335.0,
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+                Tab(
+                  child: ListView.builder(
+                    itemCount: chatList0.length,
+                    itemBuilder: (context, index){
+                      return ChatTile(
+                        image: chatList0[index]['image'],
+                        name: chatList0[index]['name'],
+                      );
+                    },
+                  )
+                ),
+                Tab(
+                  child: ListView.builder(
+                    itemCount: chatList0.length,
+                    itemBuilder: (context, index){
+                      return ChatTile(
+                        image: chatList1[index]['image'],
+                        name: chatList1[index]['name'],
+                      );
+                    },
+                  )
+                )
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
