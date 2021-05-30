@@ -21,7 +21,7 @@ class _ExploreState extends State<Explore> with SingleTickerProviderStateMixin {
       appBar: AppBar(
         bottom: TabBar(
           controller: _tabController,
-          isScrollable: true,
+          // isScrollable: true,
           // indicator: BoxDecoration(color: Colors.black),
           indicatorColor: Color(0xFF4EAD8B),
           // indicatorSize: ,

@@ -1,7 +1,7 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:oak_social/enum/constants.dart';
-import 'package:oak_social/screens/explore/explore.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -10,14 +10,6 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   
-
-  // final tabs = [
-  //   Home(),
-  //   Explore(),
-  //   Center(child: Text('Notifications')),
-  //   Center(child: Text('Profile')),
-  // ];
-
   TabController _tabController;
   @override
   void initState() {
@@ -32,12 +24,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
       backgroundColor: Colors.white,
       appBar: AppBar(
         bottom: TabBar(
+          // indicatorSize: TabBarIndicatorSize.tab,
           controller: _tabController,
-          isScrollable: true,
-          // indicator: BoxDecoration(color: Colors.black),
+          // isScrollable: true,
+          // // indicator: BoxDecoration(color: Colors.black),
           indicatorColor: Color(0xFF4EAD8B),
-          // indicatorSize: ,
-          // indicatorPadding: EdgeInsets.symmetric(horizontal: 40.0),
+          // // indicatorSize: ,
           labelColor: Color(0xFF4EAD8B),
           labelStyle: TextStyle(
               fontSize: 14,
@@ -54,7 +46,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             Tab(
                 child: Center(
               child: Text(
-                'Family Forum',
+                '    Family Forum    ',
                 style: TextStyle(
                     fontFamily: 'Manrope',
                     fontWeight: FontWeight.w600,
@@ -64,7 +56,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             Tab(
                 child: Center(
               child: Text(
-                'Direct Message',
+                '    Direct Message    ',
                 style: TextStyle(
                     fontFamily: 'Manrope',
                     fontWeight: FontWeight.w600,
@@ -80,37 +72,29 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           height: 33,
         ),
       ),
-      body: Column(
+      body: TabBarView(
+        controller: _tabController,
         children: [
-          Container(
-            height: 250.0,
-            width: 335.0,
-            child: TabBarView(
-              controller: _tabController,
-              children: [
-                Tab(
-                    child: ListView.builder(
-                  itemCount: chatList0.length,
-                  itemBuilder: (context, index) {
-                    return ChatTile(
-                      image: chatList0[index]['image'],
-                      name: chatList0[index]['name'],
-                    );
-                  },
-                )),
-                Tab(
-                    child: ListView.builder(
-                  itemCount: chatList0.length,
-                  itemBuilder: (context, index) {
-                    return ChatTile(
-                      image: chatList1[index]['image'],
-                      name: chatList1[index]['name'],
-                    );
-                  },
-                ))
-              ],
-            ),
-          ),
+          Tab(
+              child: ListView.builder(
+            itemCount: chatList0.length,
+            itemBuilder: (context, index) {
+              return ChatTile(
+                image: chatList0[index]['image'],
+                name: chatList0[index]['name'],
+              );
+            },
+          )),
+          Tab(
+              child: ListView.builder(
+            itemCount: chatList0.length,
+            itemBuilder: (context, index) {
+              return ChatTile(
+                image: chatList1[index]['image'],
+                name: chatList1[index]['name'],
+              );
+            },
+          ))
         ],
       ),
     );
