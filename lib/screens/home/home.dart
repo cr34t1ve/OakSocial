@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:oak_social/enum/constants.dart';
+import 'package:oak_social/screens/explore/explore.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -7,6 +9,15 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
+  
+
+  // final tabs = [
+  //   Home(),
+  //   Explore(),
+  //   Center(child: Text('Notifications')),
+  //   Center(child: Text('Profile')),
+  // ];
+
   TabController _tabController;
   @override
   void initState() {
@@ -78,27 +89,25 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               controller: _tabController,
               children: [
                 Tab(
-                  child: ListView.builder(
-                    itemCount: chatList0.length,
-                    itemBuilder: (context, index){
-                      return ChatTile(
-                        image: chatList0[index]['image'],
-                        name: chatList0[index]['name'],
-                      );
-                    },
-                  )
-                ),
+                    child: ListView.builder(
+                  itemCount: chatList0.length,
+                  itemBuilder: (context, index) {
+                    return ChatTile(
+                      image: chatList0[index]['image'],
+                      name: chatList0[index]['name'],
+                    );
+                  },
+                )),
                 Tab(
-                  child: ListView.builder(
-                    itemCount: chatList0.length,
-                    itemBuilder: (context, index){
-                      return ChatTile(
-                        image: chatList1[index]['image'],
-                        name: chatList1[index]['name'],
-                      );
-                    },
-                  )
-                )
+                    child: ListView.builder(
+                  itemCount: chatList0.length,
+                  itemBuilder: (context, index) {
+                    return ChatTile(
+                      image: chatList1[index]['image'],
+                      name: chatList1[index]['name'],
+                    );
+                  },
+                ))
               ],
             ),
           ),
