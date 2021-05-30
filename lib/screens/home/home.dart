@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:oak_social/enum/constants.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -79,14 +80,26 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 controller: _tabController,
                 children: [
                   Tab(
-                    child: ListView(
-                      children: [ChatTile()],
-                    ),
+                    child: ListView.builder(
+                      itemCount: chatList0.length,
+                      itemBuilder: (context, index){
+                        return ChatTile(
+                          image: chatList0[index]['image'],
+                          name: chatList0[index]['name'],
+                        );
+                      },
+                    )
                   ),
                   Tab(
-                    child: Column(
-                      children: [],
-                    ),
+                    child: ListView.builder(
+                      itemCount: chatList0.length,
+                      itemBuilder: (context, index){
+                        return ChatTile(
+                          image: chatList1[index]['image'],
+                          name: chatList1[index]['name'],
+                        );
+                      },
+                    )
                   )
                 ],
               ),
