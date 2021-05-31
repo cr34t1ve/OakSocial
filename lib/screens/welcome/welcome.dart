@@ -34,7 +34,9 @@ class Welcome extends StatelessWidget {
           ),
           DefaultButton(
             text: 'Sign Up with Email',
-            press: () {},
+            press: () {
+              Navigator.pushNamed(context, '/signup');
+            },
           ),
           SizedBox(
             height: 20.0,
@@ -56,7 +58,10 @@ class Welcome extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                       fontSize: 16),
                 ),
-                onPressed: () {}),
+                onPressed: () {
+                  Navigator.pushNamed(context, '/signin');
+                }
+              ),
           ),
           SizedBox(
             height: 25.0,
@@ -67,33 +72,28 @@ class Welcome extends StatelessWidget {
               // Note: Styles for TextSpans must be explicitly defined.
               // Child text spans will inherit styles from parent
               style: TextStyle(
-                fontSize: 12.0,
-                fontFamily: 'Manrope',
-                fontWeight: FontWeight.w400,
-                color: Color(0xFF757575),
-                decoration: TextDecoration.underline
-              ),
+                  fontSize: 12.0,
+                  fontFamily: 'Manrope',
+                  fontWeight: FontWeight.w400,
+                  color: Color(0xFF757575),
+                  decoration: TextDecoration.underline),
               children: <TextSpan>[
                 TextSpan(text: 'By signing up, you agree with the '),
                 TextSpan(
                     text: 'Terms of Service ',
                     style: TextStyle(
-                      color: Color(0xFF4299E1), 
-                      fontSize: 12, 
-                      fontFamily: 'Manrope',
-                      fontWeight: FontWeight.w500
-                    )
-                  ),
+                        color: Color(0xFF4299E1),
+                        fontSize: 12,
+                        fontFamily: 'Manrope',
+                        fontWeight: FontWeight.w500)),
                 TextSpan(text: 'and'),
                 TextSpan(
-                  text: '\nPrivacy Policy',
-                  style: TextStyle(
-                    color: Color(0xFF4299E1), 
-                    fontSize: 12,
-                    fontFamily: 'Manrope',
-                    fontWeight: FontWeight.w500
-                  )
-                ),
+                    text: '\nPrivacy Policy',
+                    style: TextStyle(
+                        color: Color(0xFF4299E1),
+                        fontSize: 12,
+                        fontFamily: 'Manrope',
+                        fontWeight: FontWeight.w500)),
               ],
             ),
           )

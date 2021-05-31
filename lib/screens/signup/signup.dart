@@ -155,7 +155,9 @@ class _SignUpState extends State<SignUp> {
             ),
             DefaultButton(
               text: 'Sign Up',
-              press: () {},
+              press: () {
+                Navigator.pushNamed(context, '/navpage');
+              },
             ),
             SizedBox(
               height: 40.0,
@@ -163,14 +165,19 @@ class _SignUpState extends State<SignUp> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(
-                  'Need an Account? Join Oak Social',
-                  style: TextStyle(
-                    decoration: TextDecoration.underline,
-                      color: Color(0xFF4299E1),
-                      fontFamily: 'Manrope',
-                      fontSize: 14.0,
-                      fontWeight: FontWeight.w600),
+                GestureDetector(
+                  onTap: () {
+                    Navigator.popAndPushNamed(context, '/signin');
+                  },
+                  child: Text(
+                    'I already have an account. Sign me In',
+                    style: TextStyle(
+                        decoration: TextDecoration.underline,
+                        color: Color(0xFF4299E1),
+                        fontFamily: 'Manrope',
+                        fontSize: 14.0,
+                        fontWeight: FontWeight.w600),
+                  ),
                 ),
               ],
             ),

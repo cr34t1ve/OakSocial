@@ -11,8 +11,9 @@ import 'package:oak_social/screens/welcome/welcome.dart';
 
 void main() {
   runApp(MaterialApp(
-    home: NavPage(),
+    initialRoute: '/splash',
     debugShowCheckedModeBanner: false,
+    themeMode: ThemeMode.dark,
     routes: {
       '/': (context) => Home(),
       '/splash': (context) => Splash(),

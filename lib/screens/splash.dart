@@ -8,6 +8,10 @@ class Splash extends StatefulWidget {
 class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
+    //Splash duration
+    Future.delayed(const Duration(seconds: 3), () {
+      Navigator.pushNamed(context, '/onboarding');
+    });
     return Scaffold(
       backgroundColor: Colors.white,
       body: Center(

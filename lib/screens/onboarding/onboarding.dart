@@ -18,13 +18,17 @@ class _OnboardingState extends State<Onboarding> {
         actions: [
           Padding(
             padding: EdgeInsets.only(right: 30.0),
-            child: Text(
-              'Skip',
-              style: TextStyle(
-                color: Colors.black,
-                fontFamily: 'Manrope',
-                fontSize: 16.0,
-                fontWeight: FontWeight.w400
+            child: GestureDetector(
+              onTap: () {
+                Navigator.pushNamed(context, '/welcome');
+              },
+              child: Text(
+                'Skip',
+                style: TextStyle(
+                    color: Colors.black,
+                    fontFamily: 'Manrope',
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w400),
               ),
             ),
           )
@@ -34,10 +38,10 @@ class _OnboardingState extends State<Onboarding> {
       body: Column(
         children: <Widget>[
           SizedBox(
-            height: 67.0,
+            height: 47.0,
           ),
           Expanded(
-            flex: 9,
+            flex: 12,
             child: PageView.builder(
               onPageChanged: (value) {
                 setState(() {
@@ -85,10 +89,8 @@ class _OnboardingState extends State<Onboarding> {
       height: 8,
       width: 8,
       decoration: BoxDecoration(
-          color: currentPage == index ? Color(0xFF4EAD8B) : Color(0xFFC4C4C4) ,
+          color: currentPage == index ? Color(0xFF4EAD8B) : Color(0xFFC4C4C4),
           borderRadius: BorderRadius.circular(3)),
     );
   }
 }
-
-

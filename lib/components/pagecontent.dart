@@ -17,10 +17,10 @@ class PageContent extends StatelessWidget {
         Spacer(),
         SvgPicture.asset(
           image,
-          fit: BoxFit.fitWidth,
+          // fit: BoxFit.fitWidth,
         ),
         SizedBox(
-          height: 62.0,
+          height: 52.0,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +51,7 @@ class PageContent extends StatelessWidget {
             ),
           ],
         ),
-        Spacer(),
+        // Spacer(),
       ],
     );
   }
