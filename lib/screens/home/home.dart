@@ -23,6 +23,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         bottom: TabBar(
           // indicatorSize: TabBarIndicatorSize.tab,
           controller: _tabController,

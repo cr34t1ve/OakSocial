@@ -19,6 +19,7 @@ class _ExploreState extends State<Explore> with SingleTickerProviderStateMixin {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
+        centerTitle: true,
         bottom: TabBar(
           controller: _tabController,
           // isScrollable: true,
